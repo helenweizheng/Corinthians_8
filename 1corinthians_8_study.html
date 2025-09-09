@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查经 - 哥林多前书 8章</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 提示框样式 */
+        .tooltip-box {
+            display: none;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            max-width: 80%;
+            z-index: 1000;
+            line-height: 1.4;
+            pointer-events: none;
+            white-space: pre-line;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        /* 有提示的文本样式 */
+        [data-tooltip] {
+            border-bottom: 1px dotted #666;
+        }
+
+        /* 移动端样式 */
+        @media (max-width: 768px) {
+            .tooltip-box {
+                position: fixed;
+                left: 50% !important;
+                top: 50% !important;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                max-width: 300px;
+                text-align: center;
+                pointer-events: auto;
+            }
+        }
+
+        /* 特殊样式 */
+        .highlight-question {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            margin: 10px 0;
+        }
+
+        .highlight-answer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-left: 4px solid #28a745;
+            margin: 10px 0;
+            font-style: italic;
+        }
+
+        .summary-box {
+            background-color: #fff3cd;
+            padding: 15px;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="main-title">MCCS小组查经</h1>
+
+    <div class="slide active">
+        <h2>10/09/2025</h2>
+        <h1 class="chapter-title">《哥林多前书》第 8 章 查经材料</h1>
+        <p><strong>主题：</strong> 知识与爱心</p>
+    </div>
+
+    <div class="slide">
+        <h2 class="section-title">一、《哥林多前书》的大背景</h2>
+        <ul>
+            <li><strong>作者：</strong> 使徒保罗</li>
+            <li><strong>时期：</strong> 约公元55年，保罗在第三次宣教旅程中</li>
+            <li><strong>历史背景：</strong> 哥林多是希腊重要的商业港口城市，以道德败坏、偶像崇拜和淫乱闻名。保罗在此建立了教会，但教会面临严重的道德和纪律问题。</li>
+            <li><strong>结构概览：</strong>
+                <ul>
+                    <li>1–4章：处理分党结派问题</li>
+                    <li>5–6章：处理道德和纪律问题</li>
+                    <li>7章：关于婚姻和独身</li>
+                    <li>8–10章：关于祭偶像之物和基督徒的自由</li>
+                    <li>11–16章：关于敬拜和教会生活</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2 class="section-title">二、前七章回顾</h2>
+        <p>哥林多前书前七章主要处理了教会中的分党结派问题（1-4章）和道德纪律问题（5-6章），以及关于婚姻和独身的问题（7章）。保罗指出哥林多教会的信徒因着智慧、口才、恩赐等外在因素而分门别类，忘记了十字架的愚拙才是神的大能。</p>
+        
+        <h3>第七章回顾：关于婚姻和独身</h3>
+        <p>《哥林多前书》第七章主要处理了关于婚姻和独身的问题。保罗针对哥林多教会中关于婚姻、离婚、再婚、独身等问题的询问，提供了基于圣经的指导原则。</p>
+        <p><strong>核心教导：</strong></p>
+        <ul>
+            <li><strong>婚姻的神圣性：</strong> 婚姻是神所设立的，夫妻应当彼此相爱，不可分离</li>
+            <li><strong>独身的恩赐：</strong> 独身也是一种恩赐，可以专心事奉主</li>
+            <li><strong>婚姻中的责任：</strong> 夫妻有彼此的义务，不可分房太久</li>
+            <li><strong>离婚的原则：</strong> 除非配偶不信且要离去，否则不可离婚</li>
+            <li><strong>再婚的指导：</strong> 寡妇可以再嫁，但要嫁在主里的人</li>
+        </ul>
+        <p><strong>整体核心信息：</strong> 教会应当以基督为中心，避免分党结派，追求属灵的合一。真正的智慧不是人的智慧，而是从神而来的智慧。</p>
+    </div>
+
+    <div class="slide">
+        <h2 class="section-title">三、第8章相关背景</h2>
+        <h3>祭偶像之物的争议</h3>
+        <p>在哥林多这个充满偶像崇拜的城市，基督徒面临一个实际问题：能否吃祭过偶像的食物？这个问题在当时非常实际，因为：</p>
+        <ul>
+            <li>市场上很多肉类都来自<span data-tooltip="祭偶像之物：指在异教神庙中祭拜过偶像后，再拿到市场上出售的肉类。">祭偶像之物</span></li>
+            <li>社交场合中经常遇到这样的食物</li>
+            <li>不同信徒对此有不同的看法和良心敏感度</li>
+        </ul>
+        
+        <h3>知识派与爱心派的冲突</h3>
+        <p>教会中出现了两种不同的态度：</p>
+        <ul>
+            <li><strong>知识派：</strong> 认为偶像算不得什么，吃祭偶像之物没问题</li>
+            <li><strong>良心派：</strong> 认为吃祭偶像之物会玷污良心</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2 class="section-title">四、第8章内容分段概览</h2>
+        <ul>
+            <li><strong>一、知识与爱心的对比 (8:1-3):</strong> 知识叫人自高自大，爱心造就人</li>
+            <li><strong>二、关于偶像和独一真神 (8:4-6):</strong> 偶像算不得什么，只有一位神</li>
+            <li><strong>三、良心软弱的现实 (8:7-8):</strong> 有人因拜惯偶像而良心软弱</li>
+            <li><strong>四、自由与责任的平衡 (8:9-13):</strong> 自由要受爱心约束</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2 class="section-title">五、经文逐段讲解与讨论</h2>
+        <p>结合经文详细注解，帮助大家深入理解并讨论。</p>
+        
+        <div class="highlight-answer">
+            <h3>【林前八1-3】知识与爱心的对比</h3>
+            <p><strong>经文：</strong></p>
+            <p><strong>【林前八1】</strong> "论到祭偶像之物，我们晓得我们都有知识。但知识是叫人自高自大，惟有爱心能造就人。"</p>
+            <p><strong>【林前八2】</strong> "若有人以为自己知道什么，按他所当知道的，他仍是不知道。"</p>
+            <p><strong>【林前八3】</strong> "若有人爱神，这人乃是神所知道的。"</p>
+            
+            <p><strong>详细注解：</strong></p>
+            <ul>
+                <li><strong>背景：</strong> 哥林多城庙宇林立，市上售卖的肉类和食物大部分是先祭过偶像的，信徒难免有意无意地吃到"祭偶像之物"。有些信徒认为吃了"祭偶像之物"就等于有分于敬拜偶像，有些信徒则认为"偶像在世上算不得什么"，所以无所谓，因此在教会内部引起了争论。</li>
+                <li><strong>关键：</strong> 当保罗论到吃"祭偶像之物"时，首先不是谈"知识"，而是先强调"爱心"。"知识是叫人自高自大"，指缺乏爱心的属灵"知识"，只会让人"自高自大"。</li>
+                <li><strong>爱心与知识：</strong> "惟有爱心能造就人"，原文是"但爱心造就人"。不是说只要有"爱心"就能"造就人"，而是说有了属灵的"知识"，还必须加上"爱心"才能"造就人"。</li>
+                <li><strong>真理基础：</strong> 神从来没有说"爱心"比"知识"更重要，却说："<span data-tooltip="何西阿书4:6：我的民因无知识而灭亡。你弃掉知识，我也弃掉你，使你不再给我作祭司。你既忘了你神的律法，我也必忘记你的儿女。">我的民因无知识而灭亡。你弃掉知识，我也弃掉你</span>"（何四6）。从神而来的"爱心"，一定是建立在真理的"知识"上："<span data-tooltip="哥林多前书13:6：不喜欢不义，只喜欢真理。">不喜欢不义，只喜欢真理</span>"（林前十三6）。</li>
+                <li><strong>真知识：</strong> 人若知道了真理，却仍然"自高自大"，表明他并没有活在真理里。因为人若是活在真理里，必然会效法基督柔和、谦卑，放下自己，用舍己的爱去"造就人"。</li>
+                <li><strong>神的认识：</strong> "若有人爱神"，他未必知道许多律法的规矩，但"这人乃是神所知道的"，因为"<span data-tooltip="提摩太后书2:19：然而，神坚固的根基立住了；上面有这印记说：主认识谁是他的人；又说：凡称呼主名的人总要离开不义。">主认识谁是祂的人</span>"（提后二19）。</li>
+            </ul>
+        </div>
+
+        <div class="highlight-question">
+            <h3>观察问题：</h3>
+            <ul>
+                <li><strong>你注意到这节经文如何对比"知识"和"爱心"？</strong><br>
+                    <em>答：保罗指出"知识是叫人自高自大"，而"爱心能造就人"。这表明缺乏爱心的知识会让人骄傲，但真正的爱心能够建立和造就别人。</em>
+                </li>
+                <li><strong>"我们都有知识"这句话可能暗示了什么背景？</strong><br>
+                    <em>答：可能暗示哥林多教会中有些信徒以"知识"为夸耀，认为自己对偶像和食物的认识是正确的，因此可以自由地吃祭偶像之物。</em>
+                </li>
+                <li><strong>"按他所当知道的，他仍是不知道"这句话表达了什么属灵状态？</strong><br>
+                    <em>答：表达了那些自以为有知识却仍然骄傲的人，实际上并没有真正活在真理里。真正的知识应该带来谦卑和爱心。</em>
+                </li>
+                <li><strong>在你的属灵成长中，有没有经历过"知识"使人骄傲的情况？</strong><br>
+                    <em>答：个人反思题，可以分享自己或观察到的例子，比如因为对圣经熟悉而看不起其他信徒，或者因为神学知识而变得论断等。</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2 class="section-title">六、经文逐段讲解与讨论（续）</h2>
+        
+        <div class="highlight-answer">
+            <h3>【林前八4-6】独一真神与三一神论</h3>
+            <p><strong>经文：</strong></p>
+            <p><strong>【林前八4】</strong> "论到吃祭偶像之物，我们知道偶像在世上算不得什么，也知道神只有一位，再没有别的神。"</p>
+            <p><strong>【林前八5】</strong> "虽有称为神的，或在天，或在地，就如那许多的神，许多的主；"</p>
+            <p><strong>【林前八6】</strong> "然而我们只有一位神，就是父——万物都本于祂；我们也归于祂——并有一位主，就是耶稣基督——万物都是借着祂有的；我们也是借着祂有的。"</p>
+            
+            <p><strong>详细注解：</strong></p>
+            <ul>
+                <li><strong>偶像的虚无：</strong> "偶像在世上算不得什么"（4节），可能是引用哥林多教会信上的话，表明偶像本身是虚无的。</li>
+                <li><strong>独一真神：</strong> 虽然世上有许多"称为神的"，但"我们只有一位神，就是父"。</li>
+                <li><strong>三一神论：</strong> 保罗明确地把主耶稣包括在「只有一位神」里：
+                    <ul>
+                        <li><strong>父神：</strong> 万物都本于祂，我们也归于祂（万有的源头和归宿）</li>
+                        <li><strong>子基督：</strong> 「万物都是借着祂有的」（6节），指圣父借着圣子创造万有（<span data-tooltip="约翰福音1:3：万物是借着他造的；凡被造的，没有一样不是借着他造的。">约一3</span>；<span data-tooltip="歌罗西书1:15-17：爱子是那不能看见之神的像，是首生的，在一切被造的以先。因为万有都是靠他造的，无论是天上的，地上的；能看见的，不能看见的；或是有位的，主治的，执政的，掌权的；一概都是借着他造的，又是为他造的。他在万有之先；万有也靠他而立。">西一15-17</span>）。「我们也是借着祂有的」，指我们是基督里「<span data-tooltip="哥林多后书5:17：若有人在基督里，他就是新造的人，旧事已过，都变成新的了。">新造的人</span>」（林后五17）</li>
+                        <li><strong>圣灵：</strong> 万有的运行者（隐含在三位一体的教义中）</li>
+                    </ul>
+                </li>
+                <li><strong>神学意义：</strong> 这段经文为三位一体的教义提供了重要的圣经基础，确立了基督教信仰的核心：独一真神的三位一体。</li>
+            </ul>
+        </div>
+
+        <div class="highlight-question">
+            <h3>观察问题：</h3>
+            <ul>
+                <li><strong>当经文说"偶像在世上算不得什么"，可能反映出信徒对偶像的看法是什么？</strong><br>
+                    <em>答：反映出那些有属灵知识的信徒认识到偶像本身是虚无的，没有任何真实的能力或存在，因此认为吃祭偶像之物不会有什么属灵影响。</em>
+                </li>
+                <li><strong>保罗如何强调独一真神与主（耶稣基督）的关系？</strong><br>
+                    <em>答：保罗明确地把主耶稣包括在「只有一位神」里。他指出父是万有的源头，而「万物都是借着祂有的」指圣父借着圣子创造万有，「我们也是借着祂有的」指我们是基督里「新造的人」，这为三位一体的教义提供了圣经基础。</em>
+                </li>
+                <li><strong>这段经文如何帮助我们理解三一神的教义？</strong><br>
+                    <em>答：这段经文显示了父神和子基督的不同角色：父是万有的源头和归宿，子基督是圣父借着创造万有的媒介，也是我们成为「新造的人」的途径，这帮助我们理解三位一体中不同位格的关系。</em>
+                </li>
+                <li><strong>在今天的文化中，有哪些"偶像"可能影响我们的信仰？</strong><br>
+                    <em>答：个人反思题，可能包括金钱、成功、地位、娱乐、人际关系等，这些都可能成为我们心中的"偶像"，影响我们对神的专一敬拜。</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2 class="section-title">七、经文逐段讲解与讨论（续）</h2>
+        
+        <div class="highlight-answer">
+            <h3>【林前八7-8】良心软弱的现实</h3>
+            <p><strong>经文：</strong></p>
+            <p><strong>【林前八7】</strong> "但人不都有这等知识。有人到如今因拜惯了偶像，就以为所吃的是祭偶像之物，既然这样，他们良心软弱，就污秽了。"</p>
+            <p><strong>【林前八8】</strong> "其实食物不能叫神看中我们，因为我们不吃也无损，吃也无益。"</p>
+            
+            <p><strong>详细注解：</strong></p>
+            <ul>
+                <li><strong>信仰多样性：</strong> 教会中有不同属灵背景的信徒，有些"因拜惯了偶像"而良心软弱。这些信徒虽然信了主，但内心仍然认为吃祭偶像之物是污秽的，因此感到良心不安。</li>
+                <li><strong>良心的作用：</strong> 虽然偶像本身算不得什么，但人的良心和信心真实存在，需要被顾及。我们不能因为自己的"知识"而忽视别人的属灵状况。</li>
+                <li><strong>食物的本质：</strong> "食物不能叫神看中我们"，说明食物本身不是信仰的核心，不能决定我们与神的关系。我们不吃也无损，吃也无益。</li>
+                <li><strong>信仰的核心：</strong> 真正的信仰不在于外在的饮食，而在于内心的信心和爱心。信仰成长是分阶段、受文化背景影响的。</li>
+                <li><strong>教会合一：</strong> 教会需要包容不同属灵背景的信徒，用爱心彼此扶持，而不是因为知识上的差异而产生分裂。</li>
+            </ul>
+        </div>
+
+        <div class="highlight-question">
+            <h3>观察问题：</h3>
+            <ul>
+                <li><strong>这节描述了什么样的弟兄信仰经验？</strong><br>
+                    <em>答：描述了那些"因拜惯了偶像"而"良心软弱"的弟兄，他们虽然信了主，但内心仍然认为吃祭偶像之物是污秽的，因此感到良心不安。</em>
+                </li>
+                <li><strong>又反映出教会中怎样的多样性？</strong><br>
+                    <em>答：反映出教会中有不同属灵背景和成长阶段的信徒，有些有属灵知识，有些良心软弱，需要彼此包容和理解。</em>
+                </li>
+                <li><strong>这句话想表达关于食物、信仰核心的什么观念？</strong><br>
+                    <em>答：想表达食物本身不是信仰的核心，不能决定我们与神的关系。真正的信仰不在于外在的饮食，而在于内心的信心和爱心。</em>
+                </li>
+                <li><strong>在你的教会中，有没有遇到过类似"良心软弱"的情况？</strong><br>
+                    <em>答：个人反思题，可以分享教会中不同信徒对某些问题的不同看法，比如对某些娱乐、消费、社交活动的不同态度等。</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2 class="section-title">八、经文逐段讲解与讨论（续）</h2>
+        
+        <div class="highlight-answer">
+            <h3>【林前八9-12】自由与责任的平衡</h3>
+            <p><strong>经文：</strong></p>
+            <p><strong>【林前八9】</strong> "只是你们要谨慎，恐怕你们这自由竟成了那软弱人的绊脚石。"</p>
+            <p><strong>【林前八10】</strong> "若有人见你这有知识的，在偶像的庙里坐席，这人的良心若是软弱，岂不放胆去吃那祭偶像之物吗？"</p>
+            <p><strong>【林前八11】</strong> "因此，基督为他死的那软弱弟兄，也就因你的知识沉沦了。"</p>
+            <p><strong>【林前八12】</strong> "你们这样得罪弟兄们，伤了他们软弱的良心，就是得罪基督。"</p>
+            
+            <p><strong>详细注解：</strong></p>
+            <ul>
+                <li><strong>庙宇坐席：</strong> "在偶像的庙里坐席"（10节），指哥林多城的庙宇里有许多饭堂，当时的社会习俗是在庙宇中宴请宾客。另外，一般人平时没有肉食，只有在庙宇中的异教庆典场合才能吃上一点肉。</li>
+                <li><strong>绊倒的危险：</strong> 如果有属灵知识的信徒"在偶像的庙里坐席"，被那些信心软弱的信徒看见了，他们就会照样跟随，以为可以不必分别为圣，因此重返以前拜偶像的生活。</li>
+                <li><strong>讽刺对比：</strong> "放胆"（10节）原文与"造就"（1节）是同一个动词，用来讽刺和对比："爱心能造就人"（1节），但缺乏爱心的属灵"知识"却使人"被造就"成"去吃那祭偶像之物"（10节）。</li>
+                <li><strong>沉沦的含义：</strong> "沉沦"（11节）原文在保罗书信中又被译为"<span data-tooltip="罗马书14:15：你若因食物叫弟兄忧愁，就不是按着爱人的道理行。基督已经替他死，你不可因你的食物叫他败坏。">败坏</span>"（罗十四15）、"<span data-tooltip="罗马书15:18：除了基督借我做的那些事，我什么都不敢提，只提他借我言语作为，用神迹奇事的能力，并圣灵的能力，使外邦人顺服。">灭亡</span>"（十五18）、"<span data-tooltip="哥林多后书2:9：为此我先前也写信给你们，要试验你们，看你们凡事顺从不顺从。">失落</span>"（林后二9）。"沉沦"原文是现在式，而不是将来式，不是指永恒的灭亡结局，而是指属灵生命现在被绊倒（13节）、被败坏。</li>
+                <li><strong>严重后果：</strong> 不但是"得罪弟兄们"，更是"得罪基督"。这是非常严重的罪，因为主耶稣说："<span data-tooltip="马太福音18:7：这世界有祸了，因为将人绊倒；绊倒人的事是免不了的，但那绊倒人的有祸了！">那绊倒人的有祸了</span>"（太十八7）。</li>
+                <li><strong>自由的真义：</strong> 虽然"偶像在世上算不得什么"（4节），所以基督徒有吃"祭偶像之物"的"自由"（9节）；但如果这自由和权利"竟成了那软弱人的绊脚石"（9节），我们就应该为爱心而放弃，这才是真正的"自由"。</li>
+            </ul>
+        </div>
+
+        <div class="highlight-question">
+            <h3>观察问题：</h3>
+            <ul>
+                <li><strong>保罗为何特别强调"你们这自由竟成了那软弱人的绊脚石"？</strong><br>
+                    <em>答：因为那些有属灵知识的信徒滥用他们的"自由"，在偶像的庙里坐席，这会让软弱的弟兄以为可以不必分别为圣，从而重返拜偶像的生活。</em>
+                </li>
+                <li><strong>在今天的教会中，有哪些"自由"可能会成为别人的绊脚石？</strong><br>
+                    <em>答：可能包括某些娱乐选择、消费习惯、社交活动、话语表达等，这些虽然本身可能没有问题，但如果让软弱的弟兄跌倒，就需要谨慎考虑。</em>
+                </li>
+                <li><strong>为什么保罗说"得罪弟兄们"就是"得罪基督"？</strong><br>
+                    <em>答：因为基督为每个弟兄都死了，当我们伤害软弱的弟兄时，就是伤害基督所爱的人，因此就是得罪基督。这体现了基督身体的合一性。</em>
+                </li>
+                <li><strong>你有没有经历过因为自己的"自由"而影响别人的情况？</strong><br>
+                    <em>答：个人反思题，可以分享自己因为坚持某些"权利"或"自由"而影响其他弟兄姐妹的经历，以及如何调整自己的行为。</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2 class="section-title">九、经文逐段讲解与讨论（续）</h2>
+        
+        <div class="highlight-answer">
+            <h3>【林前八13】保罗的舍己决定</h3>
+            <p><strong>经文：</strong></p>
+            <p><strong>【林前八13】</strong> "所以，食物若叫我弟兄跌倒，我就永远不吃肉，免得叫我弟兄跌倒了。"</p>
+            
+            <p><strong>详细注解：</strong></p>
+            <ul>
+                <li><strong>舍己的爱：</strong> 基督都已经为我们的软弱弟兄而死了（11节），我们为弟兄"永远不吃肉"有什么不可呢？不叫"弟兄跌倒"是信徒个人自由的界线，因为神所要的是基督身体的见证。</li>
+                <li><strong>效法基督：</strong> 即使是自己合理、合法的自由和权利，也应该为"造就人"（1节）而有所约束，这就是效法基督的舍己的爱（<span data-tooltip="约翰福音13:34：我赐给你们一条新命令，乃是叫你们彼此相爱；我怎样爱你们，你们也要怎样相爱。">约十三34</span>）。</li>
+                <li><strong>真自由：</strong> "<span data-tooltip="约翰福音8:32：你们必晓得真理，真理必叫你们得以自由。">真理必叫你们得以自由</span>"（约八32），是让我们可以自由地脱离自己、世界和罪恶，爱神爱人。因此，在基督里得着"<span data-tooltip="约翰福音8:36：所以天父的儿子若叫你们自由，你们就真自由了。">真自由</span>"（约八36）的人，因为爱神爱人的缘故，许多原来认为"非做不可"的事，现在就可以自由地不做；许多原来觉得"不吐不快"的话，现在可以就自由地不说。</li>
+                <li><strong>自由的原则：</strong> 无论是坚持吃"祭偶像之物"、还是坚持不吃"祭偶像之物"，都不是"真自由"。真正的自由是为爱而舍己，为别人的益处而约束自己的行为。</li>
+                <li><strong>教会见证：</strong> 信徒凡事不应该只图自己的痛快，而应首先考虑荣神、益人，考虑基督身体的见证。</li>
+            </ul>
+        </div>
+
+        <div class="highlight-question">
+            <h3>观察问题：</h3>
+            <ul>
+                <li><strong>他最终作了怎样的取舍？为什么？</strong><br>
+                    <em>答：保罗决定"永远不吃肉"，如果这会让弟兄跌倒的话。他选择放弃自己的权利，为的是保护软弱的弟兄，体现了舍己的爱。</em>
+                </li>
+                <li><strong>保罗的"永远不吃肉"决定体现了什么价值观？</strong><br>
+                    <em>答：体现了基督舍己的价值观：爱弟兄的益处比自己自由的权利更重要。真正的自由不是随心所欲，而是为了爱人而愿意放弃自己的权利。</em>
+                </li>
+                <li><strong>在你的生活中，有没有为了爱别人而放弃自己权利的经历？</strong><br>
+                    <em>答：个人反思题，可以分享自己为了照顾别人的感受或需要而放弃某些个人喜好、权利或便利的经历。</em>
+                </li>
+                <li><strong>你认为什么是真正的"自由"？</strong><br>
+                    <em>答：个人思考题，可以讨论真正的自由不是为所欲为，而是能够自由地选择为爱而舍己，为别人的益处而约束自己的行为。</em>
+                </li>
+            </ul>
+        </div>
+
+        <div class="summary-box">
+            <h3>✨ 总结要点</h3>
+            <ul>
+                <li>知识本身不是坏的，但若没有爱心，就可能成为骄傲的理由。</li>
+                <li>偶像本质上虚无，但人的良心和信心真实存在，需要被顾及。</li>
+                <li>基督徒的自由不是无限制的，而是要在爱心中受约束。</li>
+                <li>爱弟兄的益处比自己自由的权利更重要。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2 class="section-title">十、应用问题（Application）</h2>
+        <p>把经文带到今天生活里。</p>
+        
+        <div class="highlight-question">
+            <h3>一、个人自由 vs 弟兄良心</h3>
+            <ul>
+                <li>在你的生活中，有没有"你觉得没问题，但别人可能因你而跌倒"的自由？比如某些话语、习惯、消费选择？你会如何调整？</li>
+                <li>你有没有经验到"知识"使人骄傲，却缺乏爱心？反思如何让你的属灵知识转化为对教会的造就与建造。</li>
+            </ul>
+        </div>
+
+        <div class="highlight-question">
+            <h3>二、如何用爱心考虑不同信仰背景的人</h3>
+            <ul>
+                <li>面对弟兄姐妹在某些问题上的心理软弱（宗教背景、文化习惯、成长经历等），你会怎样表达敏感与关怀？</li>
+                <li>比如在国际背景下，某些文化群体对祭祀食品、饮食习惯仍有敏感，你会怎样调整自己的言行来保护他们的良心？</li>
+            </ul>
+        </div>
+
+        <div class="highlight-question">
+            <h3>三、在教会决策中落实"自由受限于爱心"</h3>
+            <ul>
+                <li>无论是聚会形式、话语使用、社交活动、商品消费等方面，如何实践以"爱心"为基准，而不是"自由"为主导？</li>
+                <li>如果你遇到"坚持自由 vs. 为别人放弃自由"的冲突，你会怎样作决定？</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2 class="section-title">十一、本章总结</h2>
+        <ol>
+            <li>属灵知识若没有爱心做引领，就容易变得自高自大</li>
+            <li>基督徒并非"无所顾忌"的自由者，而是用牺牲个人权利来造就他人</li>
+            <li>真正的属灵自由，是能为爱放下自己的权利，体现了对主和弟兄姐妹的忠诚与牺牲</li>
+            <li>教会应当以爱心为基准处理分歧，而不是以知识或自由为主导</li>
+            <li>每个人的属灵成长阶段不同，需要彼此包容和扶持</li>
+        </ol>
+    </div>
+
+    <div class="slide">
+        <h2 class="section-title">十二、祷告指引</h2>
+        <p>求神赐给我们属灵的智慧，让我们在知识上增长的同时，更在爱心上成长。</p>
+        <p>为那些在信仰上软弱的弟兄姐妹祷告，求主加添他们的信心和力量。</p>
+        <p>求神帮助我们学会为爱而舍己，愿意为了别人的益处而放弃自己的权利。</p>
+        <p>为教会的合一祷告，求主让我们在分歧中仍能以爱心彼此相待。</p>
+    </div>
+
+</div>
+
+<div class="navigation-hint">使用键盘 ← → 箭头键翻页 (或触摸屏左右滑动)</div>
+
+<script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    let touchStartX = null;
+    let touchStartY = null;
+    let isSwiping = false;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) {
+                slide.classList.add('active');
+            }
+        });
+    }
+
+    function nextSlide() {
+        if (currentSlide < slides.length - 1) {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+    }
+
+    function prevSlide() {
+        if (currentSlide > 0) {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+    }
+
+    // 只在容器区域监听
+    const container = document.querySelector('.container');
+
+    container.addEventListener('touchstart', function(e) {
+        if (e.touches.length === 1) {
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+            isSwiping = true;
+        }
+    }, { passive: true });
+
+    container.addEventListener('touchmove', function(e) {
+        if (!isSwiping || e.touches.length !== 1) return;
+    }, { passive: true });
+
+    container.addEventListener('touchend', function(e) {
+        if (!isSwiping || touchStartX === null || touchStartY === null) return;
+        const touchEndX = e.changedTouches[0].clientX;
+        const touchEndY = e.changedTouches[0].clientY;
+        const deltaX = touchEndX - touchStartX;
+        const deltaY = touchEndY - touchStartY;
+        const minSwipeDistance = 50;
+
+        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > minSwipeDistance) {
+            if (deltaX > 0) {
+                prevSlide();
+            } else {
+                nextSlide();
+            }
+        }
+
+        touchStartX = null;
+        touchStartY = null;
+        isSwiping = false;
+    }, { passive: true });
+
+    // 键盘导航
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowRight') {
+            nextSlide();
+        } else if (e.key === 'ArrowLeft') {
+            prevSlide();
+        }
+    });
+
+    // 工具提示功能
+    const tooltipElements = document.querySelectorAll('[data-tooltip]');
+    const tooltip = document.createElement('div');
+    tooltip.className = 'tooltip-box';
+    document.body.appendChild(tooltip);
+
+    tooltipElements.forEach(element => {
+        element.addEventListener('mouseenter', function(e) {
+            const text = this.getAttribute('data-tooltip');
+            tooltip.textContent = text;
+            tooltip.style.display = 'block';
+            
+            const rect = this.getBoundingClientRect();
+            tooltip.style.left = rect.left + 'px';
+            tooltip.style.top = (rect.bottom + 5) + 'px';
+        });
+
+        element.addEventListener('mouseleave', function() {
+            tooltip.style.display = 'none';
+        });
+
+        element.addEventListener('click', function(e) {
+            e.preventDefault();
+            const text = this.getAttribute('data-tooltip');
+            tooltip.textContent = text;
+            tooltip.style.display = 'block';
+            
+            const rect = this.getBoundingClientRect();
+            tooltip.style.left = rect.left + 'px';
+            tooltip.style.top = (rect.bottom + 5) + 'px';
+        });
+    });
+
+    // 点击其他地方隐藏工具提示
+    document.addEventListener('click', function(e) {
+        if (!e.target.hasAttribute('data-tooltip')) {
+            tooltip.style.display = 'none';
+        }
+    });
+
+    // 初始化显示第一张幻灯片
+    showSlide(0);
+</script>
+
+</body>
+</html>
